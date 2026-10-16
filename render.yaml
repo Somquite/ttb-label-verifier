@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: ttb-label-verifier
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
